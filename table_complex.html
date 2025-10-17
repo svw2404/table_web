@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped Grid</title>
+  <style>
+
+    table {
+      border-collapse: separate;
+      border-spacing: 12px;
+      background: white;
+      border: 3px solid black;
+    }
+
+    th, td {
+      min-width: 72px;
+      height: 56px;
+      text-align: center;
+      vertical-align: middle;
+      font-weight: 700;
+      border: 2px solid black;
+    }
+
+    th[scope="col"] {
+      background: #0d7a6d;
+      color: #fff;
+      border-color: #0d7a6d;
+      font-size: 20px;
+    }
+
+    td[scope="normal"] {
+      background: #fbf6d9;
+      color: #2b2b2b;
+    }
+
+    td[scope="green"] {
+      background: #a7d081;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th scope="col" colspan="6">Table Title</th>
+  </tr>
+
+  <tr>
+    <td scope="normal">1</td>
+    <td scope="normal">2</td>
+    <td scope="normal">3</td>
+    <td scope="normal">4</td>
+    <td scope="normal">5</td>
+    <td scope="normal">6</td>
+  </tr>
+
+  <tr>
+    <td scope="green" colspan="3">7</td>
+    <td scope="green" colspan="3">8</td>
+  </tr>
+
+  <tr>
+    <td scope="green" rowspan="2">9</td>
+    <td scope="normal">10</td>
+    <td scope="green" rowspan="2">11</td>
+    <td scope="normal">12</td>
+    <td scope="green" rowspan="2">13</td>
+    <td scope="normal">14</td>
+  </tr>
+
+  <tr>
+    <td scope="normal">15</td>
+    <td scope="normal">16</td>
+    <td scope="normal">17</td>
+  </tr>
+
+  <tr>
+    <td scope="normal">18</td>
+    <td scope="normal">19</td>
+    <td scope="normal">20</td>
+    <td scope="normal">21</td>
+    <td scope="normal">22</td>
+    <td scope="normal">23</td>
+  </tr>
+
+  <tr>
+    <td scope="normal">24</td>
+    <td scope="green" colspan="4" rowspan="3">25</td>
+    <td scope="normal">25</td>
+  </tr>
+
+  <tr>
+    <td scope="normal">26</td>
+    <td scope="normal">27</td>
+  </tr>
+
+  <tr>
+    <td scope="normal">28</td>
+    <td scope="normal">29</td>
+  </tr>
+
+  <tr>
+    <th scope="col" colspan="6">Table footnote</th>
+  </tr>
+</table>
+
+</body>
+</html>
