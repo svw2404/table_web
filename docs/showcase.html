@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sebastian — Showcase</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <ul class="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="showcase.html" class="active">Showcase</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="container">
+    <div class="left-panel">
+      <div class="profile-photo">
+        <img src="C:\Users\User\Downloads\sebassssssssssss.png" alt="Sebastian Photo">
+      </div>
+      <p class="profile-name">Sebastian Vallejos Wenninger (魏提安)</p>
+      <p class="profile-email"><a href="mailto:svw2404@gmail.com">svw2404@gmail.com</a></p>
+      <div class="left-links">
+        <a href="https://www.instagram.com/_sebasvallejos/" target="_blank">My Instagram</a>
+        <a href="mailto:svw2404@gmail.com">Send Email to ME</a>
+      </div>
+      <hr>
+    </div>
+
+    <div class="right-panel">
+      <h1>Showcase</h1>
+      <hr>
+
+      <h2>Table Styler</h2>
+      <div class="showcase-controls">
+        <button data-width="200">Width 200px</button>
+        <button data-width="500">Width 500px</button><br>
+        <div class="break"></div>
+        <button data-bp="1">Border 1px</button>
+        <button data-bp="10">Border 10px</button>
+        <button data-bp="20">Border 20px</button><br>
+        <div class="break"></div>
+        <button data-bg="#fbf6d9" style="background:#fbf6d9; color:#000;">BG Sand</button>
+        <button data-bg="#a7d081" style="background:#a7d081; color:#000;">BG Green</button>
+        <button data-bg="#ffffff" style="background:#ffffff; color:#000;">BG White</button>
+      </div>
+      <br>
+
+        <table id="ttt" class="styled-3x3">
+        <thead><tr><th colspan="3">TIC TAC TOE</th></tr></thead>
+        <tbody>
+            <tr><td data-i="0"></td><td data-i="1"></td><td data-i="2"></td></tr>
+            <tr><td data-i="3"></td><td data-i="4"></td><td data-i="5"></td></tr>
+            <tr><td data-i="6"></td><td data-i="7"></td><td data-i="8"></td></tr>
+        </tbody>
+        <tfoot><tr><th colspan="3" id="ttt-footer"></th></tr></tfoot>
+        </table>
+        <button id="reset-btn">Reset</button>
+
+
+        <div id="toast"></div>
+      <hr>
+
+      <h2>Polaroid Image</h2>
+      <div class="polaroid">
+        <div class="polaroid-frame">
+          <img id="myImage" alt="">
+        </div>
+        <div class="polaroid-controls">
+          <button id="prev">Previous</button>
+          <span id="counter">Image 1 out of 3</span>
+          <button id="next">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
